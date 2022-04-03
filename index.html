@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>alperen'S e-commerce site</title>
+    </head>
+    <body> 
+        <header>
+            <h1>Alperen's e-Commerce Site</h1>
+        </header>
+        <nav>
+            <button id="addProduct" >Add Product</button>
+            <button id="showCart"> Show Cart</button>
+        </nav>
+        <section id="productContainer">
+
+            <article>
+                <button id="addCart"></button>
+            </article>
+
+        </section>
+        <footer style="text-align: right;">
+            <h2>Alperen Ayyıldız</h2>
+        </footer>
+
+        <div id="cartDisplay">
+            <div id="cartContainer">
+
+            </div>
+            <p id="totalPrice">Total Price : </p>
+            <button id="buyBtn" onclick="buyButton()">Buy</button>
+        </div>
+
+        <div id="addProductDisplay">
+            <form>
+                <label for="ftitle">Title : </label>
+                <input type="text" name="ftitle" id="titleTxt"><br><br>
+                <label for="fdescription">Description : </label>
+                <input type="text" name="fdescription" id="desTxt"><br><br>
+                <label for="fimage">Image : </label>
+                <input type="url" name = fimage id="imgTxt"><br><br>
+                <label for="fimage">Price : </label>
+                <input type="number" name="fimage" id="priceTxt"><br><br>
+                <input id="addBtn" type="button" value="Add" style="width: 70px; height: 40px;">
+            </form>
+        </div>
+
+        <div id="confirmDisplay">
+            <form>
+                <label>Address</label>
+                <input type="text"><br><br>
+                <label>Payment Method :</label><br><br>
+                <input id="r1" type="radio" name="payment" value="Credit Card"> <label for="r1">Credit Card </label><br>
+                <input id="r2" type="radio" name="payment" value="Cash"> <label for="r2">Cash</label><br>
+                <input if="check"type="checkbox" value="Confirm"> <label for="check">Confirm</label><br><br>
+                <input type="button" value="Ok" onclick="okButton()">
+                <input type="button" value="Cancel" onclick="cancelButton()">
+            </form>
+            
+        </div>
+        
+    </body>
+</html>
